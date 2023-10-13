@@ -12428,3 +12428,8 @@ hr {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.row h2, .row p {
+
+  color:white;
+}
