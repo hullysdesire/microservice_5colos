@@ -11545,6 +11545,7 @@ th {
   width: 100%; 
   height: 100vh;
   background-image: url('../images/home/daniel-thomas-HA-0i0E7sq4-unsplash.jpg');
+
   background-size: cover;
   /* background-position: center; */
   position: inherit;
