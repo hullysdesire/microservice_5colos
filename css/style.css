@@ -3809,7 +3809,7 @@ section {
 
 /*	All CTA Styles Here  */
 .cta-service-v1 {
-  /* background-image: url(../images/background/cta-service-v1-bg.jpg); */
+  background-image: url(../images/background/home13-cta-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -3829,7 +3829,7 @@ section {
 }
 
 .cta-service-v3 {
-  background-image: url(../images/background/cta-service-v3-bg.jpg);
+  background-image: url(../images/background/home12-cta-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -5502,13 +5502,15 @@ textarea {
 .pricing_packages {
   border: 1px solid transparent;
   margin-bottom: 30px;
-  padding: 40px 15px;
+  padding: 20px 10px;
+  gap: 5px;
   position: relative;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  height: 500px;
 }
 @media (max-width: 991.98px) {
   .pricing_packages {
@@ -11860,16 +11862,16 @@ header .list-item{
  }
 
  .section1{
-  width: 80%;
+  width: 100%;
   margin: 0 auto ;
-  padding: 25px 80px 50px;
-  background-color: #FFEDE8; 
+  padding: 25px 80px 50px; 
+  background-color: #FAF7EE; 
  }
  .section2{
-  width: 80%;
+  width: 100%;
   margin: 0 auto ; 
   padding: 25px 80px 50px; 
-  background-color: lightgray;
+  background-color: #CBEFD2;
 
  }
 
@@ -11946,114 +11948,77 @@ header .list-item{
  }
  .packages{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
  
   margin-bottom: 50px;
  }
- 
 
-
- .Modifications {
- display: flex;
- justify-content: space-evenly;
- align-items: center;
- height: 250px;
- margin: 0;
- background-color;
- 
-}
-
-.card-containers {
-  display: flex;
-  justify-content: space-evenly;
-  width: 80%;
-  margin: 0 auto;
-  height: 200px;
-  gap: 50px;
+.card-sections {
+    display: flex;
+    justify-content: space-between;
 }
 
 .cards {
-   perspective: 1000px;
-   width: 300px;
-   height: 300px;
-   position: relative;
-   margin: 10px;
+    perspective: 1000px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 10px;
 }
 
 .card-inners {
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.8s; /* Ralentissement de l'effet */
-  cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
 }
-  
 
 .cards:hover .card-inners {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .card-fronts,
 .card-backs {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-  color: #027f53;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
 }
 
-.cards-fronts {
-  background-color: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s; /* Animation de couleur de fond */
+.cards h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
 }
 
-.cards:hover .card-front {
-    background-color: #e0e0e0;
+.card-fronts {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-backs {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  position: absolute;
-  backface-visibility: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-   height: 100%;
-   backface-visibility: hidden;
-   transform: rotateY(180deg);
- 
+    background-color: #fff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card-backs p {
+.card-text {
+    text-align: center;
+}
+
+.cards p {
+    margin: 0;
+}
+
+.cards h2 {
   margin: 0;
-}
-
-.card-backs p {
-  margin: 0;
-
-}
-
-.cards-text{
-  text-align: center;
-}
-
-.inline h3{
-  display: inline;
-  margin-right: 10px;
-}
-
-.inline p{
-  color: black;
-  margin-left: 40px;
-}
-
-.info-title{
-  color: white
 }
