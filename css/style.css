@@ -11965,3 +11965,9 @@ header .list-item{
 .info-title{
   color: white
 }
+
+.pricing_packages{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
